@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Converter</title>
+    <link href="../Styles/Converter.css" rel="stylesheet" />
+    <link href="../Styles/Home.css" rel="stylesheet" />
+</head>
+<body>
+   <nav>
+     <ul>
+       <li><a href ="Home.html">Home</a></li>
+       <li><a href ="#">Partners</a></li>
+       <li><a href ="http://www.thecortexhub.com/">Cortex Hub</a></li>
+       <li><a href ="http://www.codecademy.com/learn">Code Academy</a></li>
+       <li><a href ="#">Instructions</a></li>
+       <li><a href ="#">Developers</a></li>
+       <li><a href ="#">About Us</a></li>
+   </ul>
+    <input id="textbox" />
+    <a id="search" href ="#">
+        <img src ="../Images/Search/34148.png" />
+    </a>
+</nav>
+      <div class ="topMenu">
+        <img class ="picture" src ="../Images/Converter/CurrencyConverter240x240Icon.png" />
+        <h1 class ="Heading">
+            Welcome!!!
+            <br />
+            <br />
+            Convert South African rands to United State dollars 
+        </h1>
+      </div>
+    <!-- the form for the user input-->
+    <form action ="#" method ="get" onsubmit ="return converted_Rand()">
+         <div class ="converter">
+            <h4 id ="african">African Rands :</h4>  <input id ="textbook" />
+            <br />
+            <br />
+            <h4 id ="united">Dollars :</h4> <h4 id ="label"> </h4> 
+            <br />
+             <h4 id ="euro">Euros :</h4> <h4 id ="label1"> </h4> 
+             <br />
+            <input id="Submit1" type="submit" value="Convert" />
+        </div>
+    </form>
+    <div class ="line">
+    <hr />
+</div>
+    <!-- validating and converting the rands to dollars -->
+    <script>
+        var total;
+        var total1;
+        var amount;
+        function converted_Rand() {
+            var rate = 11.7;
+            var rate1 = 13.00;
+            if (document.getElementById('textbook').value == "" || isNaN(document.getElementById('textbook').value)) {
+                document.getElementById('textbook').focus();
+                alert('Please enter a numeric value');
+            }
+            else {
+                amount = (document.getElementById('textbook').value);
+                total = amount / rate;
+                total1 = amount / rate1;
+                document.getElementById('label').innerHTML = "$ " + total;
+                document.getElementById('label1').innerHTML = "€ " + total1;
+                return false;
+            }
+        }
+    </script>
+<!--the constant footer for my social networks -->
+<div class="footer">
+    <div class ="facebook">
+        <a href ="https://www.facebook.com/athini.bashe"> 
+            <img src ="../Images/Footer images/54422.png" />
+        </a>
+    </div>
+    <div class="twitter">
+        <a href ="https://twitter.com/masterbashe?lang=en"> 
+            <img src ="../Images/Footer images/54879.png" />
+        </a>
+    </div>
+    <div class ="linkedin">
+        <a href ="http://www.linkedin.com/profile/view?id=364708672&trk=hp-identity-name">
+            <img src ="../Images/Footer images/56591.png" />
+        </a>
+    </div>
+    <div class ="google">
+        <a href ="https://plus.google.com/u/0/105458237640733236965/posts">
+            <img src ="../Images/Footer images/56720.png" />
+        </a>
+    </div>  
+</div>
+
+</body>
+</html>

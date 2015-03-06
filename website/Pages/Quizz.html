@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Quizz</title>
+    <link href="../Styles/Quizz.css" rel="stylesheet" />
+    <link href="../Styles/Home.css" rel="stylesheet" />
+    <script src="/js/jquery-1.7.1.js" type="text/javascript"></script>
+    <script src="/Scripts/jquery-1.7.1.js" type="text/javascript"></script>
+</head>
+<body>
+    <!-- the menu item for all of the pages it is the same -->
+  <nav>
+        <ul>
+            <li><a href ="Home.html">Home</a></li>
+            <li><a href ="#">Partners</a></li>
+            <li><a href ="http://www.thecortexhub.com/">Cortex Hub</a></li>
+            <li><a href ="http://www.codecademy.com/learn">Code Academy</a></li>
+            <li><a href ="#">Instructions</a></li>
+            <li><a href ="#">Developers</a></li>
+            <li><a href ="#">About Us</a></li>
+        </ul>
+        <input id="textbox" />
+        <a id="search" href ="#">
+        <img src ="../Images/Search/34148.png" />
+        </a>
+    </nav>
+    <!-- the picture in the quizz form and the welcome text -->
+    <div class ="topMenu">
+        <img class ="picture" src ="../Images/Quizz/pa_quiz.png" />
+        <h1 class ="Heading">
+            Welcome Geek !!!
+            <br />
+            <br />
+            How much do you know 
+            about Computer programming
+        </h1>
+    </div>
+<!-- this is for the tabs from question one to five -->
+    <div class ="tabs">
+        <ul class ="tablinks">
+            <li class ="active"><a href="#tab1">Question One</a></li>
+            <li><a href ="#tab2">Question Two</a></li>
+            <li><a href ="#tab3">Question Three</a></li>
+            <li><a href ="#tab4">Question Four</a></li>      
+        </ul>
+    <!--the information or questions used in the tabs -->
+            <div class ="tabcontent">
+            <form action ="Quizz.html" method="get" onsubmit="return is_validated()">
+                  <!--tab one information -->
+                <div id ="tab1" class="tab active">
+                     <h5>1. It is used to store a value in programming</h5>
+                        <input id ="variable"  type="checkbox" name ="name1" value ="Variable" /> Variable <br />
+                        <input id ="memory" type="checkbox" name ="name2" value ="Memory space"/> Memory space<br />
+
+                      <h5>2. Which is the comparison operator</h5>
+                        <input id="Radio1" type="radio" value ="Equal " name ="operator"/>Equal <br />
+                        <input id="Radio2" type="radio" value ="And" name ="operator" /> And <br />
+
+                      <h5>4. Coding is about giving a computer a set of .... to execute</h5>
+                        <input id ="input" type ="text" />
+
+                        <!--<input type="checkbox" name="name7" value ="Instructions" /> Instructions<br />
+                        <input type="checkbox" name="name8" value ="Lines" /> lines <br />-->
+
+                      <h5>5. Most applications when developed are divided into ... tiers</h5>
+                        <input id ="three" type="checkbox" name ="name9" value ="3"/> Three<br />
+                        <input id="five" type="checkbox" name="name10" value ="5"/> Five <br />
+                           <input id="Submit1" type="submit" value="Submit" /> 
+                    </div>
+                </form>
+                <!--validation -->
+                <script>
+                    function is_validated() {
+                        var variable = document.getElementById('variable').checked;
+                        var memory = document.getElementById('memory').checked;
+                        var equal = document.getElementById('Radio1').checked;
+                        var and = document.getElementById('Radio2').checked;
+                        var three = document.getElementById('three').checked;
+                        var five = document.getElementById('five').checked;
+
+
+                        if (document.getElementById('input').value == "" && variable == false && memory == false && equal == false && and == false && three == false && five == false) {
+                            alert('Please choose an answer');
+                            return false
+                        }
+                        else if (Radio2.checked || memory == true || five == true || document.getElementById('input').value != "Instructions") {
+                            alert('One of the answers is not correct');
+                            return false
+
+                        }
+                        else {
+
+                            alert('Congradulations all answers are correct');
+                        }
+                    }
+                </script>
+            <!-- tab two information -->
+            <!--<form>
+                <div id ="tab2" class ="tab">
+                    <h5>1. Is it not true that only one radio button can be selected under one section</h5>
+                        <input id="Radio1" type="radio" />
+                        <input id="Radio2" type="radio" />
+                    <h5>2. Java is not object orientated</h5>
+                         <input id="Radio3" type="radio" />
+                         <input id="Radio4" type="radio" />
+                    <h5>3. Html is used to develop desktop applications</h5>
+                         <input id="Radio5" type="radio" />
+                         <input id="Radio6" type="radio" />
+                    <h5>4. CSS stands for cassandra standard state</h5>
+                         <input id="Radio7" type="radio" />
+                         <input id="Radio8" type="radio" />
+                    <h5>5. CSS is 18 year old</h5>
+                         <input id="Radio9" type="radio" />
+                         <input id="Radio10" type="radio" />
+                            <input id="Submit2" type="submit" value="submit" />
+                </div>
+            </form>
+            <!-- tab three information -->
+            <!--<form>
+                <div id ="tab3" class ="tab">
+                    <h5>1. !True != False</h5>
+                        <input id="Text1" type="text" />
+                    <h5>2. 5*2 > 5 == true || false</h5>
+                        <input id="Text2" type="text" />
+                    <h5>3. true||false </h5>
+                        <input id="Text3" type="text" />
+                    <h5>4. functions are used to run a particular code when that particular function is invoked</h5>
+                        <input id="Text4" type="text" />
+                    <h5>5. assign an integer in a string variable will cause bugs in the code</h5>
+                        <input id="Text5" type="text" />           
+                </div>
+            </form>-->
+            <!-- tab four information -->
+        <!--    <form>
+                <div id ="tab4" class="tab">
+                    <h5>1. which is not used in web development</h5>
+                        <input id="Checkbox11" type="checkbox" />
+                        <input id="Checkbox12" type="checkbox" />
+                    <h5>2. which is the most widly use language</h5>
+                        <input id="Text6" type="text" />
+                    <h5>3. the first programmer is a ...</h5>
+                        <input id="Radio11" type="radio" />
+                        <input id="Radio12" type="radio" />
+                    <h5>4. who wants to go to Silicon Valley at Cortex hub</h5>
+                        <input id="Text7" type="text" />
+                    <h5>5. Who is the third richest man in the planet</h5>
+                        <input id="Checkbox13" type="checkbox" />
+                        <input id="Checkbox14" type="checkbox" />
+                            <input id="Submit3" type="submit" value="submit" />
+                </div>
+            </form>-->
+        </div>
+        <div class ="head2">
+            <hr />
+        </div>
+        
+   </div>
+    <div class="footer">
+    <div class ="facebook">
+        <a href ="https://www.facebook.com/athini.bashe"> 
+            <img src ="../Images/Footer images/54422.png" />
+        </a>
+    </div>
+    <div class="twitter">
+        <a href ="https://twitter.com/masterbashe?lang=en"> 
+            <img src ="../Images/Footer images/54879.png" />
+        </a>
+    </div>
+    <div class ="linkedin">
+        <a href ="http://www.linkedin.com/profile/view?id=364708672&trk=hp-identity-name">
+            <img src ="../Images/Footer images/56591.png" />
+        </a>
+    </div>
+    <div class ="google">
+        <a href ="https://plus.google.com/u/0/105458237640733236965/posts">
+            <img src ="../Images/Footer images/56720.png" />
+        </a>
+    </div>  
+</div>
+</body>
+</html>

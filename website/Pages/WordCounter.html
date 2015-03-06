@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Word Counter</title>
+    <link rel ="stylesheet" href ="../Styles/WordCounter.css" />
+    <link href ="../Styles/Home.css" rel ="stylesheet" />
+</head>
+<body>
+<nav>
+   <ul>
+       <li><a href ="Home.html">Home</a></li>
+       <li><a href ="#">Partners</a></li>
+       <li><a href ="http://www.thecortexhub.com/">Cortex Hub</a></li>
+       <li><a href ="http://www.codecademy.com/learn">Code Academy</a></li>
+       <li><a href ="#">Instructions</a></li>
+       <li><a href ="#">Developers</a></li>
+       <li><a href ="#">About Us</a></li>
+   </ul>
+    <input id="textbox" />
+    <a id="search" href ="#">
+        <img src ="../Images/Search/34148.png" />
+    </a>
+</nav>
+<div class ="words">
+    <h1>What if there was a way to count the <br /> number of words written ---->></h1>
+</div>
+<div class ="topMenu1">
+        <img class ="picture" src ="../Images/Counter/Words.png"/>
+</div>
+<div class ="line">
+    <hr />
+</div>
+<form action ="#" method="get" onsubmit="return Count_words()">
+ <div class ="textbox">
+        <textarea id ="textwords" rows ="25" cols ="80" >
+        </textarea>
+        <input id ="counter" type ="submit" value ="Count" />
+        <h4 id ="counted"></h4>
+ </div>  
+</form>
+    <script>
+        function Count_words() {
+            if (document.getElementById('textwords').value == "") {
+                alert('Enter some text');
+            }
+            else {
+                var count = 0;
+                var words_no = textwords.value.split("");
+                for (i = 0; i < words_no.length; i++) {
+                    if (words_no[i] != "")
+                        count += 1;
+                }
+                document.getElementById('counted').innerHTML = count;
+                return false;
+            }
+        }
+    </script>
+<div class="footer">
+    <div class ="facebook">
+        <a href ="https://www.facebook.com/athini.bashe"> 
+            <img src ="../Images/Footer images/54422.png" />
+        </a>
+    </div>
+    <div class="twitter">
+        <a href ="https://twitter.com/masterbashe?lang=en"> 
+            <img src ="../Images/Footer images/54879.png" />
+        </a>
+    </div>
+    <div class ="linkedin">
+        <a href ="http://www.linkedin.com/profile/view?id=364708672&trk=hp-identity-name">
+            <img src ="../Images/Footer images/56591.png" />
+        </a>
+    </div>
+    <div class ="google">
+        <a href ="https://plus.google.com/u/0/105458237640733236965/posts">
+            <img src ="../Images/Footer images/56720.png" />
+        </a>
+    </div>  
+</div>
+
+</body>
+</html>

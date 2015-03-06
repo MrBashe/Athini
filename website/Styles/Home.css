@@ -1,0 +1,123 @@
+﻿body {
+    background-color:white;
+}
+nav {
+height:70px;
+background-color:black;
+}
+nav ul {
+    list-style:none;
+}
+nav ul li a {
+    float:left;
+    padding:0px 50px;
+    text-align:center;
+    text-decoration:none;
+    font-family:Cambria;
+    font-size:22px;
+    font-style:oblique;
+    color:white;
+    line-height:65px;
+
+}
+.one {
+    width:200px; 
+    height:250px; 
+    border:2px;
+    position:fixed;
+    top:200px;
+    left:450px;
+}
+.two {
+    width:200px; 
+    height:250px; 
+    border:2px;
+    position:fixed;
+    top:200px;
+    left:800px;
+}
+.three {
+    width:200px; 
+    height:250px; 
+    border:2px;
+    position:fixed;
+    top:200px;
+    left:1150px;
+}
+.four {
+    width:200px; 
+    height:250px; 
+    border:2px;
+    position:fixed;
+    top:600px;
+    left:450px;
+}
+.five {
+    width:200px; 
+    height:250px; 
+    border:2px;
+    position:fixed;
+    top:600px;
+    left:800px;
+
+}
+.six {
+    width:200px; 
+    height:250px; 
+    /*border:2px solid black;*/
+    position:fixed;
+    top:600px;
+    left:1150px;
+}
+.line {
+    position:absolute;
+    width:1910px;
+    bottom:90px;
+}
+
+.footer {
+    height:50px;
+    position:absolute;
+    bottom:10px;
+    left:800px;
+}
+.facebook {
+    position:absolute;
+    height:50px;
+    bottom:10px;
+    left:210px;
+}
+.twitter {
+    position:absolute;
+    height:50px;
+    bottom:10px;
+    left:160px; 
+}
+.linkedin {
+    position:absolute;
+    height:50px;
+    bottom:10px;
+    left:110px;
+}
+.google {
+    position:absolute;
+    height:50px;
+    bottom:10px;
+    left:60px;
+}
+#textbox {
+    position:absolute;
+    height:25px;
+    width:250px;
+    top:32px;
+    right:150px;
+    font-family:Cambria;
+    font-size:15px;
+    text-align:center;
+    font-style:italic;
+}
+#search {
+    position:absolute;
+    top:32px;
+    right:114px;
+}

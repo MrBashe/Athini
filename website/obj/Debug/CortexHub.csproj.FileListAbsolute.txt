@@ -1,0 +1,5 @@
+C:\Users\Cortex Hub\Documents\Visual Studio 2012\Projects\WebApplication2\WebApplication2\bin\WebApplication2.dll
+C:\Users\Cortex Hub\Documents\Visual Studio 2012\Projects\WebApplication2\WebApplication2\bin\WebApplication2.pdb
+C:\Users\Cortex Hub\Documents\Visual Studio 2012\Projects\WebApplication2\WebApplication2\obj\Debug\CortexHub.csprojResolveAssemblyReference.cache
+C:\Users\Cortex Hub\Documents\Visual Studio 2012\Projects\WebApplication2\WebApplication2\obj\Debug\WebApplication2.dll
+C:\Users\Cortex Hub\Documents\Visual Studio 2012\Projects\WebApplication2\WebApplication2\obj\Debug\WebApplication2.pdb

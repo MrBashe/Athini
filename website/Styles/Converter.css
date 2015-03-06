@@ -1,0 +1,85 @@
+﻿
+.converter {
+    border-color:green;
+    position:absolute;
+    left:850px;
+    top:500px;
+    border-radius:30px;
+    border:2px solid thin;
+    background-color:#D6EBFF;
+    width:700px;
+    height:350px;
+}
+
+.Heading {
+    font-family:Cambria;
+    color:black;
+    font-style:oblique;
+    position:absolute;
+    font-size:40px;
+    top:140px;
+    width:800px;
+    height:200px;
+    left:800px;
+}
+.picture {
+    position: absolute;
+    left: 200px;
+    top: 100px;
+}
+#textbook {
+    width:300px;
+    height:30px;
+    font-family:Cambria;
+    position:absolute;
+    left:350px;
+    top:85px;
+}
+#label {
+    width:300px;
+    height:30px;
+    font-family:Cambria;
+    position:absolute;
+    left:350px;
+    top:130px;
+}
+#label1 {
+    width:300px;
+    height:30px;
+    font-family:Cambria;
+    position:absolute;
+    left:350px;
+    top:170px;
+}
+#african {
+    font-family:Cambria;
+    position:absolute;
+    left:110px;
+    top:80px;
+}
+#united {
+    font-family:Cambria;
+    position:absolute;
+    left:110px;
+    top:130px;
+}
+#euro {
+    font-family:Cambria;
+    position:absolute;
+    left:110px;
+    top:180px;    font-family:Cambria;
+    position:absolute;
+    left:110px;
+    top:170px;
+}
+#Submit1 {
+    position:absolute;
+    width:160px;
+    height:45px;
+    font-family:Cambria;
+    left:280px;
+    top:250px;
+}
+    #Submit1:hover {
+        background-color:#87CEEB;
+    }

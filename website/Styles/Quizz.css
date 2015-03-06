@@ -1,0 +1,106 @@
+﻿.Heading {
+    font-family:Cambria;
+    color:black;
+    font-style:oblique;
+    position:absolute;
+    font-size:40px;
+    top:140px;
+    width:800px;
+    height:200px;
+    left:800px;
+}
+.head2 {
+    position:absolute;
+    width:1915px;
+    top:500px;
+}
+.picture {
+    position:absolute;
+    left:200px;
+    top:100px;
+}
+.Question {
+    position:absolute;
+    top:500px;
+    left:60px;
+}
+.One {
+    position:absolute;
+    top:450px;
+    left:60px;
+}
+
+.tabs {
+    width:100%;
+    display:inline-block;
+    position:absolute;
+    top:400px;
+    right:0px;
+}
+/*not sure what it does*/
+.tablinks :after{
+    display:block;
+    clear:both;
+    content:'';
+}
+.tablinks li {
+    margin:0px 15px;
+    float:left;
+    list-style:none;
+}
+#input {
+    font-family:Cambria;
+    font-style:oblique;
+}
+.tablinks a {
+    padding:9px 15px;
+    font-size:16px;
+    border-radius:3px 3px 3px 3px;
+    color:blue;
+    font-style:oblique;
+    font-weight:600;
+    display:inline-block;
+    background:#7FB5DA;
+    /*transition:all linear 0.15s;*/
+    text-decoration:none;
+}
+    .tablinks a :hover {
+        background:#a7cce5;
+        text-decoration:none;
+    }
+.tabcontent {
+    padding:30px;
+    border-radius:6px;
+    /*box-shadow:-2px 2px 4px -2px blue;*/
+    background:#fff;
+}
+h5 {
+    font-family:Cambria;
+    font-style:normal;
+    font-size:14px;
+}
+#Submit1 {
+    position:absolute;
+    width:90px;
+    height:30px;
+    border-radius:1px;
+    font-style:oblique;
+    font-weight:600;
+    left:550px;
+}
+    #Submit1:hover {
+        background-color:#87CEEB;
+    }
+
+/*the beauty that of .tab.active   active and non active tab*/
+.tab {
+    display:none;
+}
+    .tab.active {
+        display:block;
+    }
+
+
+
+
+
